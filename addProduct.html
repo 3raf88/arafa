@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/addProductStyle.css">
+    <link rel="stylesheet" href="Style/homeStyle.css">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/MainLogo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="addProduct">
+        <div class="form-group">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" required>
+
+            <label for="product-price">Product Price:</label>
+            <input type="number" id="product-price" required>
+
+            <label for="product-image">Product Image:</label>
+            <input type="file" id="product-image" accept="image/*" onchange="previewImage()" required>
+            <img id="image-preview" src="#" alt="Image Preview" style="display:none; margin-top:15px; border-radius:8px; width:100%; max-height:250px; object-fit:contain;">
+
+            <input type="submit" onclick="addProduct()" value="Add Product " id="addProduct">
+        </div>
+    </section>
+    <script src="addProduct.js"></script>
+</body>
+
+</html>

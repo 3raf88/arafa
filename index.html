@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="roll-up" onclick="scrollToTop()">
+        <div class="roll-up-content">
+            ↑
+        </div>
+    </div>
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/MainLogo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="addProduct2" href="addProduct.html">+</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="Main">
+        <div class="leftHand">
+            <h1>Welcome to My Mobile Store</h1>
+            <p>Welcome to our website – your trusted destination for the latest smartphone at the best price</p>
+            <a href="#contact">Contact Me</a>
+            <a href="#products">Our Products</a>
+        </div>
+        <div class="rightHand">
+            <img src="assets/MainLogo.png" alt="">
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <h1 style="color: white; text-align: center; background-color: #1064cb; padding: 10px;">About Us</h1>
+    <section id="about">
+        <div class="About">
+            <p>
+                Welcome to <strong>My Mobile Store</strong> – your trusted destination for the latest smartphones, accessories, and unbeatable offers. We provide high-quality mobile devices from top brands at competitive prices.
+            </p>
+            <p>
+                Whether you're looking for the newest iPhone, a powerful Android device, or reliable accessories – we’ve got you covered. Our mission is to deliver excellent customer service and ensure your tech needs are met with satisfaction.
+            </p>
+            <a id="btnAbout" href="#products">Our Products</a>
+        </div>
+        <div class="aboutImg">
+            <img src="assets/MainLogo.png" alt="MH Mobile Store Logo">
+        </div>
+    </section>
+
+
+    <!-- Section 3 -->
+    <h1 id="products">My Products</h1>
+    <div class="slider-wrapper">
+        <button onclick="scrollProducts(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+        <section class="Products" id="Products">
+            <div class="product">
+                <img onload="data()" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd6M2AHR4ZBg1e7KAswxvuPBo9zdWWrbVNoxSDqfFwAP-52hg14Z_BuwDVskeoH0ICIvVHgRExtkUDvUj1T6UceuFs3VC0QK2tm87fVGHn-0W9lusKZqE0nsuQUjeQ03qy58etVfI&usqp=CAc" alt="Product 1">
+                <h2>OPPO A18</h2>
+                <p>26,000 EGP</p>
+                <button>Buy Now</button>
+            </div>
+        </section>
+        <button onclick="scrollProducts(1)"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!-- Section 4 -->
+    <h1 id="contact">Contact Me</h1>
+    <section class="contact">
+        <div>
+            <input class="email" type="email" placeholder="Email">
+            <input class="subject" type="text" placeholder="Subject">
+        </div>
+        <textarea class="Message" placeholder="Message"></textarea>
+        <button class="submit">Submit</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2022 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

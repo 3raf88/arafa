@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #679ddf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #0171f9;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #ee626b;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+
+header ul li a:hover {
+    background-color: #d6202c;
+    transition: all 0.2s ease;
+}
+
+.addProduct {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(1, 113, 249, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+.form-group label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0171f9;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #0171f9;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-group input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ee626b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #d6202c;
+}
+
+#image-preview {
+    border: 2px dashed #0171f9;
+    padding: 5px;
+    background-color: #f0f8ff;
+}

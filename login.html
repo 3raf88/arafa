@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Store</title>
+    <link rel="stylesheet" href="Style/loginStyle.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <img class="logo" src="assets/MainLogo.png" />
+        <div class="header-links">
+            <a href="reg.html" class="btn">Registere</a>
+        </div>
+    </div>
+
+    <!-- Landing Section -->
+    <div class="landing-page">
+        <div class="box-register" id="register">
+            <div class="top-header">
+                <h2>Sign IN, Now!</h2>
+                <h4>We are happy to have you with us.</h4>
+            </div>
+            <div class="input-group">
+                <div class="input-field">
+                    <input type="text" class="input-box" id="logUsername" required>
+                    <label for="regUsername">Username</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input-box" id="logPassword" required>
+                    <label for="regPassword">Password</label>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="formCheck2" class="check">
+                    <label for="formCheck2">Remember Me</label>
+                </div>
+                <div class="input-field">
+                    <input type="submit" onclick="dataBehavior.Login()" class="input-submit" id="logSubmit" value="Log in" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="landing-page-image-container">
+            <img src="assets/MainLogo.png" />
+        </div>
+    </div>
+    <script src="logScript.js"></script>
+</body>
+
+
+</html>
